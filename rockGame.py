@@ -15,4 +15,7 @@ print("Welcome to the Rock Paper Scissors game");
 options = ["Rock", "Paper", "Scissors" ]
 
 # get the user user's choice
-choice = input("Choose Rock, Paper or Scissors :")
+choice = input("Choose Rock, Paper or Scissors :").lower()
+
+
+

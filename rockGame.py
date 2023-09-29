@@ -9,4 +9,7 @@
 print("Welcome to the Rock Paper Scissors game");
 
 # Ask question and give user optios
-print("Choose Rock, Paper or Scissors :")
+#print("Choose Rock, Paper or Scissors :")
+
+# get the user user's choice
+choice = input("Choose Rock, Paper or Scissors :")

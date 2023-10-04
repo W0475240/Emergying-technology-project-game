@@ -22,8 +22,10 @@ def get_user_choice():
             return userChoice
         else:
             print("Your choice is invalid!! Please choose Rock, Paper or Scissors. ")
-            
-computerChoice =["Rock", "Paper", "Scissors"]
+ 
+def get_computer_choice():
+    computerChoice =["Rock", "Paper", "Scissors"]           
+
 
         if userChoice == "Rock":
                 random_answer = random.choice(["Rock", "Paper", "Scissors"])

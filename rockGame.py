@@ -28,9 +28,19 @@ def get_computer_choice():
     return random.choice(["Rock", "Paper", "Scissors"])
     
 # function for deciding who wins
-def determine_the_winner():
-    if use
+def determine_the_winner(userChoice, computerChoice):
+    if userChoice == computerChoice:
+        return "It is a tie! Please try again."
          
+    elif ( 
+          (userChoice == "rock" and computerChoice == "Scissors") or
+          (userChoice == "rock" and computerChoice == "Paper") or 
+          (userChoice == "Scissors" and computerChoice == "Paper") or
+          (userChoice == "Scissors" and computerChoice == "rock") or 
+          (userChoice == "Paper" and computerChoice == "Scissors") or
+          (userChoice == "Paper" and computerChoice == "rock") or 
+         ):
+        return
 
 
         #if userChoice == "Rock":

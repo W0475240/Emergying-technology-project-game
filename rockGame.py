@@ -22,13 +22,19 @@ def get_user_choice():
             return userChoice
         else:
             print("Your choice is invalid!! Please choose Rock, Paper or Scissors. ")
- 
+            
+ # option for cumputer's choice
 def get_computer_choice():
-    computerChoice =["Rock", "Paper", "Scissors"]           
+    return random.choice(["Rock", "Paper", "Scissors"])
+    
+# function for deciding who wins
+def determine_the_winner():
+    if use
+         
 
 
-        if userChoice == "Rock":
-                random_answer = random.choice(["Rock", "Paper", "Scissors"])
-                answer = f" my answer is {random_answer}."
+        #if userChoice == "Rock":
+                #random_answer = random.choice(["Rock", "Paper", "Scissors"])
+                #answer = f" my answer is {random_answer}."
 
 

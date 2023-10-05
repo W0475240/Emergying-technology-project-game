@@ -33,14 +33,18 @@ def determine_the_winner(userChoice, computerChoice):
         return "It is a tie! Please try again."
          
     elif ( 
-          (userChoice == "rock" and computerChoice == "Scissors") or
-          (userChoice == "rock" and computerChoice == "Paper") or 
-          (userChoice == "Scissors" and computerChoice == "Paper") or
-          (userChoice == "Scissors" and computerChoice == "rock") or 
-          (userChoice == "Paper" and computerChoice == "Scissors") or
-          (userChoice == "Paper" and computerChoice == "rock") or 
-         ):
-        return
+        (userChoice == "rock" and computerChoice == "Scissors") or
+        #(userChoice == "rock" and computerChoice == "Paper") or 
+        (userChoice == "Scissors" and computerChoice == "Paper") or
+        #(userChoice == "Scissors" and computerChoice == "rock") or 
+        #(userChoice == "Paper" and computerChoice == "Scissors") or
+        (userChoice == "Paper" and computerChoice == "rock")
+):
+        
+            return "You win!"
+    else: 
+            return "Computer wins!"
+
 
 
         #if userChoice == "Rock":

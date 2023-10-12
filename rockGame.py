@@ -18,7 +18,7 @@ options = ["Rock", "Paper", "Scissors" ]
 def get_user_choice():
     while True:
         userChoice = input("Choose Rock, Paper or Scissors :").lower()
-        if userChoice in ["Rock, Paper or Scissors"]:
+        if userChoice in options:
             return userChoice
         else:
             print("Your choice is invalid!! Please choose Rock, Paper or Scissors. ")
@@ -47,10 +47,10 @@ def determine_the_winner(userChoice, computerChoice):
 
 # Main game loop
 while True:
-    user_choice = get_user_choice()
-    computer_choice = get_computer_choice()
-    print(f"You chose {user_choice}, and the computer chose {computer_choice}.")
-    result = determine_the_winner(user_choice, computer_choice)
+    userChoice = get_user_choice()
+    computerChoice = get_computer_choice()
+    print(f"You chose {userChoice}, and the computer chose {computerChoice}.")
+    result = determine_the_winner(userChoice, computerChoice)
     print(result)
     
     play_again = input("Do you want to play again? (yes/no): ")

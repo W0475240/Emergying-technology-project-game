@@ -45,7 +45,19 @@ def determine_the_winner(userChoice, computerChoice):
     else: 
             return "Computer wins!"
 
+# Main game loop
+while True:
+    user_choice = get_user_choice()
+    computer_choice = get_computer_choice()
+    print(f"You chose {user_choice}, and the computer chose {computer_choice}.")
+    result = determine_the_winner(user_choice, computer_choice)
+    print(result)
+    
+    play_again = input("Do you want to play again? (yes/no): ")
+    if play_again.lower() != "yes":
+        break
 
+print("Thank you for playing the Rock Paper Scissors game!")
 
         #if userChoice == "Rock":
                 #random_answer = random.choice(["Rock", "Paper", "Scissors"])

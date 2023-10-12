@@ -18,7 +18,7 @@ options = ["Rock", "Paper", "Scissors" ]
 def get_user_choice():
     while True:
         userChoice = input("Choose Rock, Paper or Scissors :").lower()
-        if userChoice in options:
+        if userChoice.lower() in ["rock", "paper", "scissors"]:
             return userChoice
         else:
             print("Your choice is invalid!! Please choose Rock, Paper or Scissors. ")
@@ -33,12 +33,12 @@ def determine_the_winner(userChoice, computerChoice):
         return "It is a tie! Please try again."
          
     elif ( 
-        (userChoice == "rock" and computerChoice == "Scissors") or
+        (userChoice == "rock" and computerChoice == "scissors") or
         #(userChoice == "rock" and computerChoice == "Paper") or 
-        (userChoice == "Scissors" and computerChoice == "Paper") or
-        #(userChoice == "Scissors" and computerChoice == "rock") or 
+        (userChoice == "scissors" and computerChoice == "paper") or
+        #(userChoice == "scissors" and computerChoice == "rock") or 
         #(userChoice == "Paper" and computerChoice == "Scissors") or
-        (userChoice == "Paper" and computerChoice == "rock")
+        (userChoice == "paper" and computerChoice == "rock")
 ):
         
             return "You win!"

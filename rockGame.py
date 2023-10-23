@@ -25,6 +25,7 @@ def get_user_choice():
             
  # option for cumputer's choice
 def get_computer_choice():
+    
     return random.choice(["Rock", "Paper", "Scissors"])
     
 # function for deciding who wins

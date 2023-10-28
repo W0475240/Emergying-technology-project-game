@@ -9,7 +9,6 @@ import random
 print("Welcome to the Rock Paper Scissors game");
 
 # Ask question and give user optios
-#print("Choose Rock, Paper or Scissors :")
 
 # available options
 options = ["Rock", "Paper", "Scissors" ]
@@ -34,11 +33,8 @@ def determine_the_winner(userChoice, computerChoice):
         return "It is a tie! Please try again."
          
     elif ( 
-        (userChoice == "rock" and computerChoice == "scissors") or
-        #(userChoice == "rock" and computerChoice == "Paper") or 
+        (userChoice == "rock" and computerChoice == "scissors") or 
         (userChoice == "scissors" and computerChoice == "paper") or
-        #(userChoice == "scissors" and computerChoice == "rock") or 
-        #(userChoice == "Paper" and computerChoice == "Scissors") or
         (userChoice == "paper" and computerChoice == "rock")
 ):
         
@@ -54,14 +50,17 @@ while True:
     result = determine_the_winner(userChoice, computerChoice)
     print(result)
     
-    play_again = input("Do you want to play again? (yes/no): ")
-    if play_again.lower() != "yes":
+    play_again = input("Do you want to play again? (yes/no): ").lower()
+    if play_again in ["yes", "no"]:
+        break
+    else:
+            print("Invalid choice! Please enter 'yes' or 'no'.")
+
+    if play_again == "no":
         break
 
 print("Thank you for playing the Rock Paper Scissors game!")
 
-        #if userChoice == "Rock":
-                #random_answer = random.choice(["Rock", "Paper", "Scissors"])
-                #answer = f" my answer is {random_answer}."
+       
 
 

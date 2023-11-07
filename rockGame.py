@@ -54,6 +54,7 @@ while True:
     if play_again in ["yes", "no"]:
         break
     else:
+            # invalid choice for yes or no
             print("Invalid choice! Please enter 'yes' or 'no'.")
 
     if play_again == "no":

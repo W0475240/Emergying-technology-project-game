@@ -50,10 +50,11 @@ while True:
     result = determine_the_winner(userChoice, computerChoice)
     print(result)
     
-    play_again = input("Do you want to play again? (yes/no): ").lower()
-    if play_again in ["yes", "no"]:
-        break
-    else:
+    while True:
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again in ["yes", "no"]:
+            break
+        else:
             # invalid choice for yes or no
             print("Invalid choice! Please enter 'yes' or 'no'.")
 

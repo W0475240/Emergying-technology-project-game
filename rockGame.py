@@ -33,18 +33,18 @@ def get_computer_choice():
     
 # function for deciding who wins
 def determine_the_winner(userChoice, computerChoice):
+    userChoice = userChoice.lower()
+    computerChoice = computerChoice.lower()
+
     if userChoice == computerChoice:
         return "It is a tie! Please try again."
-         
-    elif ( 
-        (userChoice == "rock" and computerChoice == "scissors") or 
-        (userChoice == "scissors" and computerChoice == "paper") or
-        (userChoice == "paper" and computerChoice == "rock")
-):
-        
-            return "You win!"
+    elif (userChoice == "rock" and computerChoice == "scissors") or \
+         (userChoice == "scissors" and computerChoice == "paper") or \
+         (userChoice == "paper" and computerChoice == "rock"):
+        return "You win!"
     else: 
-            return "Computer wins!"
+        return "Computer wins!"
+
 
 # Main game loop
 while True:

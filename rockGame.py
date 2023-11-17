@@ -1,4 +1,3 @@
-
 """
     Author: Shaghayegh Amouhossein
     Date: 28 Sep 2023.
@@ -6,7 +5,12 @@
 """
 import random
 # Adding the welcome sentence
-print("Welcome to the Rock Paper Scissors game");
+def display_welcome_message():
+    print("Welcome to the Rock Paper Scissors game")
+
+# Call this function 
+display_welcome_message()
+
 
 # Ask question and give user optios
 
@@ -62,7 +66,3 @@ while True:
         break
 
 print("Thank you for playing the Rock Paper Scissors game!")
-
-       
-
-

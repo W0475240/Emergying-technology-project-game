@@ -28,7 +28,7 @@ def get_user_choice():
             
  # option for cumputer's choice
 def get_computer_choice():
-    
+    # generating the computer
     return random.choice(["Rock", "Paper", "Scissors"])
     
 # function for deciding who wins
@@ -50,7 +50,7 @@ def determine_the_winner(userChoice, computerChoice):
 while True:
     userChoice = get_user_choice()
     computerChoice = get_computer_choice()
-    print(f"You chose {userChoice}, and the computer chose {computerChoice}.")
+    print(f"You chose {userChoice.lower()}, and the computer chose {computerChoice.lower()}.")
     result = determine_the_winner(userChoice, computerChoice)
     print(result)
     

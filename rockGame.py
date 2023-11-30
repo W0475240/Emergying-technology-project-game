@@ -21,7 +21,7 @@ options = ["Rock", "Paper", "Scissors" ]
 def get_user_choice():
     while True:
         userChoice = input("Choose Rock, Paper or Scissors :").lower()
-        if userChoice.lower() in ["rock", "paper", "scissors"]:
+        if userChoice in ["rock", "paper", "scissors"]:
             return userChoice
         else:
             print("Your choice is invalid!! Please choose Rock, Paper or Scissors. ")
